@@ -54,8 +54,8 @@ class BuilderMatcherCodeProducer extends BuilderCodeProducer<Set<String>> {
   ) _matcherMethod({
     required String name,
     required Reference parameterType,
-    String resolve = '',
     required bool areParametersRequired,
+    String resolve = '',
   }) =>
       (enumName, info) => Method(
             (b) => b

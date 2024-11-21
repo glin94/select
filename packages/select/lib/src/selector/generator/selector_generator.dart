@@ -24,9 +24,7 @@ class SelectorGenerator
           .map(
         (field) => FieldInformation(
           name: field.displayName,
-          type: field.type
-              .getDisplayString(withNullability: true)
-              .replaceAll('*', ''),
+          type: field.type.getDisplayString().replaceAll('*', ''),
         ),
       );
 }
